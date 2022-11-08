@@ -20,7 +20,8 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/new', function(req, res, next) {
-  res.end('hello')
+  let message = req.body.name + ": " + req.body.messageText
+  res.end(message)
 })
 
 module.exports = router;
