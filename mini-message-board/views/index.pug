@@ -7,8 +7,7 @@ html
             button(type="button") New Message
         h1 Messages
         each message, index in messages
-            h3= messages[index].user
-            ul
-                li= messages[index].user
-                li= messages[index].text
-                li= messages[index].added
+            fieldset
+                h3= messages[index].user
+                p= messages[index].text
+                p= messages[index].added
