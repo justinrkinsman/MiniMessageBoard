@@ -20,8 +20,8 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/new', function(req, res, next) {
-  let message = req.body.name + ": " + req.body.messageText
-  res.end(message)
+  messages.push({text: req.body.messageText, user: req.body.name, added: new Date()})
+  res.redirect('/')
 })
 
 module.exports = router;
