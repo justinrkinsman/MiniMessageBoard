@@ -1,0 +1,16 @@
+doctype html
+html 
+    head 
+        title #{title}
+    body 
+        h1 Enter your message
+        form(action="/new", method="post")
+            input(
+                placeholder="Name"
+                type="input"
+            )
+            input(
+                placeholder="Enter Message"
+                type="input"
+            )
+            button Submit
