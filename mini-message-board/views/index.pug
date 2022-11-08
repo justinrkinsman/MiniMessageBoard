@@ -1,0 +1,11 @@
+doctype html
+html 
+    head 
+        title #{title}
+    body 
+        h1 Messages
+        each message, index in messages
+            h3= messages[index].user
+            ul
+                li= messages[index].text
+                li= messages[index].added
