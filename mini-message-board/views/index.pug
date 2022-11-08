@@ -3,6 +3,8 @@ html
     head 
         title #{title}
     body 
+        a(href="new")
+            button(type="button") New Message
         h1 Messages
         each message, index in messages
             h3= messages[index].user
